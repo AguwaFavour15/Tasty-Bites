@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites - Food Website</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="orange darken-1">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Tasty Bites</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <section id="home" class="section scrollspy">
+        <div class="hero valign-wrapper">
+            <div class="container center-align white-text">
+                <h1>Welcome to Tasty Bites</h1>
+                <p class="flow-text">Delicious food for everyone</p>
+                <a href="#menu" class="btn-large orange waves-effect waves-light">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section scrollspy grey lighten-4">
+        <div class="container">
+            <h2 class="center-align">Our Menu</h2>
+            <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Classic burger bun,  lightly toasted, golden brown.jpg" alt="Burger">
+                            <span class="card-title">Classic Burger</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Juicy beef patty with fresh vegetables and special sauce.</p>
+                            <p class="orange-text">$8.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 2 -->
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Best Pepperoni Pizza Grilled Cheese Recipe _ Easy Cheesy Lunch _ Digital Download PDF.jpg" alt="Pizza">
+                            <span class="card-title">Pepperoni Pizza</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Classic pizza with mozzarella cheese and pepperoni.</p>
+                            <p class="orange-text">$12.99</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Item 3 -->
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Italian Creamy Chicken Pasta.jpg" alt="Pasta">
+                            <span class="card-title">Creamy Pasta</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Pasta with creamy white sauce and mushrooms.</p>
+                            <p class="orange-text">$10.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <img src="img/Early mornings.jpg" alt="Restaurant" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 m6">
+                    <h2>About Us</h2>
+                    <p class="flow-text">Tasty Bites has been serving delicious food since 2010. Our chefs use only the freshest ingredients to create meals that will satisfy your cravings.</p>
+                    <p>We believe in quality food, excellent service, and a comfortable atmosphere for all our customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section scrollspy grey lighten-4">
+        <div class="container">
+            <h2 class="center-align">Contact Us</h2>
+            <div class="row">
+                <form class="col s12 m8 offset-m2">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">person</i>
+                            <input id="name" type="text" class="validate" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" type="tel" class="validate">
+                            <label for="phone">Your Phone (Optional)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                    </div>
+                    <div class="row center-align">
+                        <button class="btn orange waves-effect waves-light" type="submit">Send Message
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer orange darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5 class="white-text">Tasty Bites</h5>
+                    <p class="grey-text text-lighten-4">123 Food Street, Foodville</p>
+                    <p class="grey-text text-lighten-4">Open: 10AM - 10PM Daily</p>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright orange darken-2">
+            <div class="container">
+                © 2023 Tasty Bites
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Mobile sidenav
+            $('.sidenav').sidenav();
+            
+            // Scrollspy
+            $('.scrollspy').scrollSpy();
+            
+            // Materialboxed (for images)
+            $('.materialboxed').materialbox();
+        });
+    </script>
+</body>
+</html>
